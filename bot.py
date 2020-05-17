@@ -20,7 +20,7 @@ def job():
     api = tweepy.API(auth)
     api.update_status(tweet)
     
-schedule.every().day.at("8:20").do(job)
+schedule.every().day.at("08:20").do(job)
 schedule.every().day.at("20:20").do(job)
 
 while True:
