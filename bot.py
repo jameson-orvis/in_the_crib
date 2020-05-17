@@ -13,6 +13,7 @@ def job():
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tweepy.API(auth)
     api.update_status(tweet)
+    print(tweet)
     
 schedule.every().minute.at(":15").do(job)
 
