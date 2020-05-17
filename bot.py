@@ -2,6 +2,8 @@
 @author: pswjt
 """
 
+print("hello")
+
 import tweepy
 import schedule
 import time
