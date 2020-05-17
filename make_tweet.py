@@ -5,8 +5,8 @@ import random
 
 def make_tweet():
     tweet = 'fucked up in the crib'
-    food_or_drink = random.randint(0,1)
-    if food_or_drink == 0:
+    food_or_drink = random.random()
+    if food_or_drink > 0.19:
         file = open("foods.txt","r")
         verb = ' eating '
     else:
@@ -18,3 +18,4 @@ def make_tweet():
     file.close()
     return tweet
     
+print(make_tweet())
